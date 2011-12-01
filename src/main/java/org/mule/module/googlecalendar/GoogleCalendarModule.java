@@ -22,6 +22,8 @@ package org.mule.module.googlecalendar;
 
 import java.io.IOException;
 
+import javax.annotation.PostConstruct;
+
 import org.mule.api.annotations.Module;
 import org.mule.api.annotations.Processor;
 import org.mule.api.annotations.param.Payload;
@@ -41,13 +43,11 @@ public class GoogleCalendarModule {
 
 	private GoogleCalendarFacade facade;
 
-	GoogleCalendarFacade getFacade() throws IOException {
-		if (facade == null) {
-			facade = new GoogleCalendarFacade();
-		}
-		return facade;
-	}
-
+	@PostConstruct
+    public void postConstruct() throws IOException {
+		facade = new GoogleCalendarFacade();
+    }
+	
 	
 	////////////////////////////////////////////////////////////////
 	//

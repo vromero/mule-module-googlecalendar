@@ -10,7 +10,7 @@
         http://www.mulesoft.org/schema/mule/googlecalendar http://www.mulesoft.org/schema/mule/googlecalendar/1.0/mule-googlecalendar.xsd">
 
     <flow name="testFlow">
-        <googlecalendar:get-calendar-list accessKey="4/Nr__NnHd2y1ovwAws8M-2l9RC6Cw"/>
+        <googlecalendar:get-colors accessToken="4/Nr__NnHd2y1ovwAws8M-2l9RC6Cw"/>
     </flow>
 
 </mule>
