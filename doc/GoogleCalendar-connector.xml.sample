@@ -1,0 +1,6 @@
+<!-- BEGIN_INCLUDE(googlecalendar:getColors) -->
+    <googlecalendar:get-colors />
+<!-- END_INCLUDE(googlecalendar:getColors) -->
+<!-- BEGIN_INCLUDE(googlecalendar:getCalendarList) -->
+    <googlecalendar:get-calendar-list />
+<!-- END_INCLUDE(googlecalendar:getCalendarList) -->
